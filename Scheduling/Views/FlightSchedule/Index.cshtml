@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Scheduling.Models.FlightSchedule>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<!--
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+-->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Flights</th>
+            <th>Depart</th>
+            <th>From</th>
+            <th>To</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<p>
+    <a asp-action="Print">Download</a>
+</p>
